@@ -1,0 +1,61 @@
+.Register-Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1b2b; /* Fondo oscuro */
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+    color: #ffffff;
+    border: 1px solid #4f4c6b; /* Borde con tono púrpura oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos de los campos de entrada */
+  .Register-Form label {
+    font-size: 14px;
+    color: #b0b0b0;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .Register-Form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4f4c6b;
+    border-radius: 5px;
+    background-color: #2d2c3a;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .Register-Form input:focus {
+    outline: none;
+    border-color: #8c75ff; /* Cambia el borde a un tono violeta al hacer foco */
+  }
+  
+  /* Botón de envío */
+  .Register-Form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7d3cff; /* Color violeta */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: lowercase; /* Para que el texto esté en minúsculas */
+  }
+  
+  .Register-Form button:hover {
+    background-color: #6a34cc; /* Tono más oscuro al hacer hover */
+  }
+  
+
+  
+
