@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import './LoginForm.css';
+import './RegisterForm.css';
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({ email: '', nombre: '',apellido:'',fechaNac:'',password:'',rpassword:'' });
@@ -19,36 +19,39 @@ const RegisterForm = () => {
     <div className="Register-Form">
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Correo Electrónico:</label>
+          
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder='Correo Electronico'
             required
           />
         </div>
 
 
         <div>
-            <label>nombre </label>
+            
             <input
                 id="nombre"
                 name="nombre"
                 value={formData.nombre}
                 onChange={handleChange}
                 required
+                placeholder='Nombre'
             />
         </div>
         <div>
-            <label>apellido</label>
+            
             <input
                 id="apellido"
                 name="apellido"
                 value={formData.apellido}
                 onChange={handleChange}
                 required
+                placeholder='apellido'
             />
         </div>
 
@@ -68,7 +71,7 @@ const RegisterForm = () => {
 
 
         <div>
-          <label htmlFor="password">Contraseña:</label>
+          
           <input
             type="password"
             id="password"
@@ -76,11 +79,12 @@ const RegisterForm = () => {
             value={formData.password}
             onChange={handleChange}
             required
+            placeholder='Contraseña'
           />
         </div>
 
         <div>
-          <label htmlFor="password">repetir contraseña:</label>
+          
           <input
             type="password"
             id="password"
@@ -88,6 +92,7 @@ const RegisterForm = () => {
             value={formData.rpassword}
             onChange={handleChange}
             required
+            placeholder='Repetir contraseña'
           />
         </div>
         <button type="submit">aceptar</button>

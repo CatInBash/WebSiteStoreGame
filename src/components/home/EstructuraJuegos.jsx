@@ -1,16 +1,22 @@
-function EstructuraJuego(){
+import FiltroOrden from "./FiltroOrden"
+import ContentJuegos from "./ContentJuegos"
+
+function EstructuraJuego({juegos}){
 
 
-    const juegos["www.iamge.com",titulo,descripcion]
+   
 
     return(<div>
 
+        <FiltroOrden></FiltroOrden>
 
-        <ul>
-            {juegos.map((juego,index)=>(<li key={index}>{juego}</li>))}
-            
-        </ul>
+        <ContentJuegos juegos= {juegos}></ContentJuegos>
+       
+        
+        
 
          </div>)
 
 }
+
+export default EstructuraJuego

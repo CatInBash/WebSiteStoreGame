@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import './LoginForm.css';
+import './LoginForm.css';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -19,24 +19,26 @@ const LoginForm = () => {
     <div className="Login-Form">
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Correo Electrónico:</label>
+          
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder='Correo Electronico'
             required
           />
         </div>
         <div>
-          <label htmlFor="password">Contraseña:</label>
+          
           <input
             type="password"
             id="password"
             name="password"
             value={formData.password}
             onChange={handleChange}
+            placeholder='Contraseña'
             required
           />
         </div>
