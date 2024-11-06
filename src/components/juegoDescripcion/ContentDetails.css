@@ -1,0 +1,53 @@
+/* Estilo principal del contenedor de contenido */
+.contentDetailsText {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; /* Centrar en la página */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Título del juego */
+.contentDetailsText h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Descripción del juego */
+.contentDetailsText p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Contenedor de cada detalle */
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Etiquetas (label) */
+.detail-item label {
+    font-weight: bold;
+    color: #444;
+    flex-basis: 35%; /* Espacio fijo para las etiquetas */
+}
+
+/* Texto descriptivo (span) */
+.detail-item span {
+    color: #555;
+    flex-basis: 65%; /* Espacio para el contenido */
+    text-align: right;
+}

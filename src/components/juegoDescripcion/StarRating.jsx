@@ -19,7 +19,7 @@ function StarRating({ onRatingChange }) {
           onClick={() => handleRating(index + 1)}
           style={{
             cursor: 'pointer',
-            color: index < rating ? 'white' : 'gray' // Llena la estrella según el índice
+            color: index < rating ? 'gold' : 'gray' // Llena la estrella según el índice
           }}
         >
           ★

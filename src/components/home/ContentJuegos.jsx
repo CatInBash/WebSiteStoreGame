@@ -5,7 +5,7 @@ function ContentJuegos({juegos}){
 
 
     return(
-        <div calssName= "gallery-container">
+        <div className= "gallery-container">
 
             {juegos.map((juego)=>(
                 <CardJuego key={juego.id} juego = {juego} ></CardJuego>

@@ -14,7 +14,7 @@ function ContentPuntuar(){
       };
 
       const handleSubmit = () => {
-        // Aquí puedes manejar el envío de la puntuación y el comentario
+        // Aca tenemos la puntuacion y el comentario del usuario
         console.log('Puntuación:', rating);
         console.log('Comentario:', comment);
       };

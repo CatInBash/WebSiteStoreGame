@@ -2,7 +2,7 @@ import AvatarSesion from "./AvatarSesion";
 import { Link, useNavigate } from 'react-router-dom';
 
 
-function Nav({ user, isAuthenticated, setIsAuthenticated, setUser }){
+function Nav2({ user, isAuthenticated, setIsAuthenticated, setUser }){
     const navigate = useNavigate();
     const handleMisJuegosClick = () => {
         if (isAuthenticated) {
@@ -42,5 +42,4 @@ function Nav({ user, isAuthenticated, setIsAuthenticated, setUser }){
 }
 
 
-export default Nav;
-
+export default Nav2;
