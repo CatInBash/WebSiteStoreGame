@@ -12,7 +12,7 @@ import LoginPage from './components/inicioSesion/LoginPage.jsx';
 import RegisterPage from './components/registrarse/RegisterPage.jsx'
 import ComprarForm from "./components/comprar/comprarForm.jsx";
 
-
+import "./App.css"
 
 
 function App() {
@@ -45,7 +45,7 @@ const handleLogout = () => {
   
 
   return (<Router>
-    <div>
+    <div className="App">
     <Nav
     user={user}
     isAuthenticated={isAuthenticated}
@@ -66,7 +66,7 @@ const handleLogout = () => {
                         )
                     }
                 />
-                <Route path="/inicioSesion" element={<LoginPage onLogin={handleLogin} />} />
+                <Route path="/iniciarSesion" element={<LoginPage onLogin={handleLogin} />} />
                 <Route path="/registrarse" element={<RegisterPage />} />
             </Routes>
         </div>

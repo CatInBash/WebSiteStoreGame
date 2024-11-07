@@ -1,6 +1,6 @@
 import React from 'react';
 import FiltroItem from './FiltroItem';
-
+//import "./Filtros.css"
 function Filtros(){
     const opcionesCategoria = ["Acción", "Estrategia", "Carreras", "RPG"];
     const opcionesPrecio = ["Gratis", "Menos de $20", "$20-$50", "Más de $50"];
@@ -9,7 +9,7 @@ function Filtros(){
     const opcionesJugadores =["SinglePlayer","Multiplayer"]
   
     return (
-      <div className="filtros">
+      <div className="filtrosPanel">
         <h2>Filtros</h2>
         <FiltroItem titulo="Categoría" opciones={opcionesCategoria} />
         <FiltroItem titulo="Precio" opciones={opcionesPrecio} />

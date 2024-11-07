@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
-
+import { Link } from 'react-router-dom';
 const LoginForm = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
 
@@ -47,8 +47,10 @@ const LoginForm = () => {
         {/* Contenedor de los enlaces de ayuda */}
         <div className="help-text">
           <a href="#forgot-password">¿Olvidaste tu contraseña?</a>
+          
           <span className="separator">|</span>
-          <a href="#register">Registrate</a>
+          <Link to="/registrarse">Registrarse</Link>
+          
         </div>
       </form>
     </div>

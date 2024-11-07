@@ -1,6 +1,6 @@
 import AvatarSesion from "./AvatarSesion";
 import { Link, useNavigate } from 'react-router-dom';
-
+//import "./nav.css"
 
 function Nav({ user, isAuthenticated, setIsAuthenticated, setUser }){
     const navigate = useNavigate();
@@ -9,6 +9,7 @@ function Nav({ user, isAuthenticated, setIsAuthenticated, setUser }){
             navigate('/mis-juegos');
         } else {
             alert('Por favor, inicia sesión para ver tus juegos.');
+            
         }
     }
 
@@ -18,11 +19,13 @@ function Nav({ user, isAuthenticated, setIsAuthenticated, setUser }){
         navigate("/");  // Redirigir al inicio después de cerrar sesión
     }
     return (<div className="Nav" >
+
+        
         
         <li>gameOff</li>
         {!isAuthenticated ? (
         <>
-          <li><Link to="/iniciar-sesion">Iniciar Sesión</Link></li>
+          <li><Link to="/iniciarSesion">Iniciar Sesión</Link></li>
           <li><Link to="/registrarse">Registrarse</Link></li>
         </>
       ) : (

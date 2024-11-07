@@ -1,0 +1,7 @@
+.Nav{display: flex;
+    width: 990px;
+    height: 74px;
+    padding: 9px 0px 9px 273px;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;}

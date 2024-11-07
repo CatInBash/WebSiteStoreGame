@@ -1,12 +1,12 @@
 import FiltroOrden from "./FiltroOrden"
 import ContentJuegos from "./ContentJuegos"
-
+//import "./EstructuraJuego.css"
 function EstructuraJuego({juegos}){
 
 
    
 
-    return(<div>
+    return(<div className="EstructuraJuego">
 
         <FiltroOrden></FiltroOrden>
 

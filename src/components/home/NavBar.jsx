@@ -1,5 +1,5 @@
 import Buscador from "./Buscador";
-
+import "./NavBar.css"
 function NavBar () {
 
     return (<div className="NavBar">

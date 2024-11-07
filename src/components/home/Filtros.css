@@ -1,0 +1,11 @@
+.filtrosPanel{
+    display: flex;
+width: 250px;
+height: 479px;
+padding-bottom: 2px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+
+}

@@ -5,8 +5,8 @@ function FiltroOrden(){
 
 
    return (
-      <div className="filtros">
-        <h2>Filtros</h2>
+      <div className="OrderBy">
+        <h3>Filtrar por</h3>
         <FiltroItem titulo="Ordenar por" opciones={opcionesOrden} />
         
         

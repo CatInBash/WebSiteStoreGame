@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    background-color:#1C1A24;
+    
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #2C2C3E;
+}
+
+/* Botón de GamesOff */
+.Nav li:first-child {
+    background-color: #5AE88F; /* Color de fondo verde */
+    color: #000000; /* Color de texto negro */
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.Nav li:first-child:hover {
+    background-color: #4BC979; /* Cambia el fondo en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Enlaces de navegación */
+.Nav li {
+    display: inline;
+    margin: 0 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.Nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Nav li:hover a {
+    color: #5AE88F; /* Color verde claro al pasar el cursor */
+}
+
+
+
+.main-content {
+
+    
+    background-color: #2C2C3E;
+    border-radius: 10px;
+}/*#2C2C3E*/
+
+/* Panel de filtros */
+.filtrosPanel {
+   
+    
+    border-radius: 10px;
+    color: #f9f2f2;
+    background-color: #cf4e4e;
+    
+  
+    
+}
+
+.filtrosPanel h2 {
+    
+    
+    
+    
+}
+
+.filtro-item {
+    margin-bottom: 15px;
+}
+
+.filtro-titulo {
+    background: none;
+    color: #FFFFFF;
+    
+    
+    
+   
+}
+
+.filtro-titulo:hover {
+    
+}
+
+/* Barra de búsqueda y favoritos */
+.NavBar { 
+   
+    
+    
+    
+   
+    background-color: pink;
+    
+}
+
+.heart-icon {
+    font-size: 24px;
+    color: #FF4D4D; /* Color del icono de corazón */
+}
+
+.Buscador input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+   
+    
+    background-color: #3A3A4E;
+    color: #FFFFFF;
+    
+
+}
+
+/* Estructura de la galería de juegos */
+.EstructuraJuego {
+   
+    
+}
+
+.OrderBy {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.OrderBy h3 {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    position: relative;
+    background-color: #1E1E2F;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.game-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Efecto de hover en las imágenes */
+.game-card:hover .game-image {
+    transform: scale(1.05);
+}

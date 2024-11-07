@@ -1,0 +1,13 @@
+.ContentMain{display: flex;
+width: 1042px;
+height: 697px;
+padding-left: 36px;
+align-items: flex-start;
+align-content: flex-start;
+gap: 52px 48px;
+flex-shrink: 0;
+flex-wrap: wrap;
+
+border-radius: 19px;
+background: #282633;
+;}
