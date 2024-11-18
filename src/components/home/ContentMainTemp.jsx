@@ -3,7 +3,7 @@ import EstructuraJuego from "./EstructuraJuegos"
 import Filtros from "./Filtros"
 import NavBar from "./NavBar"
 //import "./ContentMain.css"  
-function ContentMain({juegos}){
+function ContentMain({owner,juegos}){
 
 
 
@@ -14,11 +14,7 @@ function ContentMain({juegos}){
 
         
         
-        <EstructuraJuego juegos = {juegos}></EstructuraJuego>
-
-
-        
-
+        <EstructuraJuego owner={owner} juegos = {juegos}></EstructuraJuego>
 
     </div>
         

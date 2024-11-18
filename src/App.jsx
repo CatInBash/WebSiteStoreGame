@@ -13,23 +13,36 @@ import RegisterPage from './components/registrarse/RegisterPage.jsx'
 import ComprarForm from "./components/comprar/comprarForm.jsx";
 
 import "./App.css"
+import HomePage from "./components/home/HomePage.jsx";
+import MisJuegosPage from "./components/mis-juegos/misJuegosPage.jsx";
+import GameDetailOwnerPage from "./components/juegoDetailOwner/GameDetailOwnerPage.jsx";
+import { AppProvider } from "./AppProvider.jsx";
 
 
 function App() {
+
+    const juegosTodos= [
+        {"title":"elderscrolls",
+        "image":"1",
+        "id":"1"
+    },
+    {"title":"fallout",
+        "image":"2",
+        "id":"2"
+    }
+    
+    ]
+
+
+
+    
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
 
-  const juegos= [
-    {"title":"elderscrolls",
-    "image":"1",
-    "id":"1"
-},
-{"title":"fallout",
-    "image":"2",
-    "id":"2"
-}
-
-]
+    "_id":"1",
+    "owner":true,
+    "juegos":juegos
+});
 
 
   const handleLogin = (userData) => {
@@ -44,7 +57,8 @@ const handleLogout = () => {
 
   
 
-  return (<Router>
+  return (<AppProvider>
+    <Router>
     <div className="App">
     <Nav
     user={user}
@@ -55,26 +69,31 @@ const handleLogout = () => {
         
         <div className="main-content">
             <Routes>
-                <Route path="/" element={<ContentMain juegos={juegos} />} />
-                <Route
-                    path="/home"
-                    element={
-                        isAuthenticated ? (
-                            <ContentMain juegos={user.juegos} />
-                        ) : (
-                            <LoginPage onLogin={handleLogin} />
-                        )
-                    }
-                />
+                <Route path="/" element={<HomePage juegos={juegos} user={user} />} />
+                
                 <Route path="/iniciarSesion" element={<LoginPage onLogin={handleLogin} />} />
                 <Route path="/registrarse" element={<RegisterPage />} />
+                <Route path="/mis-juegos" element={<MisJuegosPage  owner={user.owner} juegos={user.juegos}/>} />
+                <Route path="/wishList" element={<WishListPage />} />
+                <Route path="/juegoDescripcion" element={<ContentMainDetails />} />
+                <Route path="/juegoDetailOwner" element={<GameDetailOwnerPage
+                  
+                  user={user}
+
+                  onModify={handleModify} 
+                  onDelete={handleDelete} 
+                  onPublish={handlePublish} 
+                  onUnpublish={handleUnpublish} />} />
+
+
+
             </Routes>
         </div>
     </div>
 </Router>
 
       
-  );
+</AppProvider> );
 }
 
 export default App;

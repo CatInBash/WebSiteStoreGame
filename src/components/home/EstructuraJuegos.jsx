@@ -1,7 +1,7 @@
 import FiltroOrden from "./FiltroOrden"
 import ContentJuegos from "./ContentJuegos"
 //import "./EstructuraJuego.css"
-function EstructuraJuego({juegos}){
+function EstructuraJuego({owner,juegos}){
 
 
    
@@ -10,7 +10,7 @@ function EstructuraJuego({juegos}){
 
         <FiltroOrden></FiltroOrden>
 
-        <ContentJuegos juegos= {juegos}></ContentJuegos>
+        <ContentJuegos owner= {owner} juegos={juegos}></ContentJuegos>
        
         
         

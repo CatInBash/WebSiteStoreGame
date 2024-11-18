@@ -1,7 +1,7 @@
 
 
 
-function WishList (WishListProps){
+function WishListPage (WishListProps){
 
     const {body}= WishListProps;
 
